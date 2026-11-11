@@ -19,6 +19,8 @@ import numpy as np
 from scipy import signal
 from scipy.linalg import toeplitz
 
+from .stft import istft, stft
+
 
 # =============================================================================
 # Spectral Gating (using noisereduce library)
@@ -112,7 +114,7 @@ def spectral_subtraction(
         Denoised audio.
     """
     # Compute STFT
-    D = librosa_stft(audio, n_fft, hop_length)
+    D = stft(audio, n_fft, hop_length)
     magnitude = np.abs(D)
     phase = np.angle(D)
 
@@ -130,7 +132,7 @@ def spectral_subtraction(
 
     # Reconstruct
     D_clean = subtracted * np.exp(1j * phase)
-    return librosa_istft(D_clean, hop_length)
+    return istft(D_clean, hop_length)
 
 
 # =============================================================================
@@ -162,7 +164,7 @@ def wiener_filter(
     Returns:
         Filtered audio.
     """
-    D = librosa_stft(audio, n_fft, hop_length)
+    D = stft(audio, n_fft, hop_length)
     magnitude = np.abs(D)
     power = magnitude ** 2
     phase = np.angle(D)
@@ -197,7 +199,7 @@ def wiener_filter(
     gain = xi / (xi + 1)
     D_filtered = gain * magnitude * np.exp(1j * phase)
 
-    return librosa_istft(D_filtered, hop_length)
+    return istft(D_filtered, hop_length)
 
 
 # =============================================================================
@@ -288,7 +290,7 @@ def multi_band_spectral_subtraction(
             (4000, sr // 2, 1.6),  # High frequencies: aggressive
         ]
 
-    D = librosa_stft(audio, n_fft, hop_length)
+    D = stft(audio, n_fft, hop_length)
     magnitude = np.abs(D)
     phase = np.angle(D)
     freqs = np.fft.rfftfreq(n_fft, 1.0 / sr)[: magnitude.shape[0]]
@@ -311,32 +313,7 @@ def multi_band_spectral_subtraction(
         )
 
     D_clean = subtracted * np.exp(1j * phase)
-    return librosa_istft(D_clean, hop_length)
-
-
-# =============================================================================
-# Helper STFT/ISTFT wrappers
-# =============================================================================
-
-def librosa_stft(
-    audio: np.ndarray,
-    n_fft: int = 512,
-    hop_length: int = 128,
-) -> np.ndarray:
-    """Compute STFT using librosa."""
-    import librosa
-
-    return librosa.stft(audio.astype(np.float32), n_fft=n_fft, hop_length=hop_length)
-
-
-def librosa_istft(
-    D: np.ndarray,
-    hop_length: int = 128,
-) -> np.ndarray:
-    """Compute inverse STFT using librosa."""
-    import librosa
-
-    return librosa.istft(D, hop_length=hop_length)
+    return istft(D_clean, hop_length)
 
 
 # =============================================================================

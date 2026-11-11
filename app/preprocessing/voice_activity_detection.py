@@ -19,6 +19,8 @@ import inspect
 
 import numpy as np
 
+from .stft import stft
+
 
 @dataclass
 class SpeechSegment:
@@ -275,9 +277,7 @@ def spectral_entropy_vad(
     Returns:
         List of detected SpeechSegments.
     """
-    import librosa
-
-    D = librosa.stft(audio.astype(np.float32), n_fft=n_fft, hop_length=hop_length)
+    D = stft(audio, n_fft=n_fft, hop_length=hop_length)
     magnitude = np.abs(D)
 
     # Normalize each frame to get probability distribution

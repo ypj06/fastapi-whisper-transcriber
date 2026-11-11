@@ -20,6 +20,8 @@ import numpy as np
 from scipy import signal
 from scipy.signal import butter, lfilter, freqz
 
+from .stft import istft, stft
+
 
 # =============================================================================
 # Dynamic Range Compression
@@ -410,10 +412,8 @@ def dereverberation(
     Returns:
         Dereverberated audio.
     """
-    import librosa
-
     # Compute STFT
-    D = librosa.stft(audio.astype(np.float32), n_fft=n_fft, hop_length=hop_length)
+    D = stft(audio, n_fft=n_fft, hop_length=hop_length)
     magnitude = np.abs(D)
     phase = np.angle(D)
 
@@ -441,7 +441,7 @@ def dereverberation(
 
     # Reconstruct
     D_clean = clean_mag * np.exp(1j * phase)
-    return librosa.istft(D_clean, hop_length=hop_length)
+    return istft(D_clean, hop_length=hop_length)
 
 
 # =============================================================================
