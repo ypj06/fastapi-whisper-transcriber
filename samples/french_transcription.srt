@@ -1,0 +1,132 @@
+1
+00:00:31,629 --> 00:00:35,630
+Monsieur, excusez-moi, bonjour, pour aller hors lit, s'il-vous-plaît.
+
+2
+00:00:35,630 --> 00:00:38,630
+L'aéroport ? Oui, c'est ça, l'aéroport.
+
+3
+00:00:38,630 --> 00:00:45,630
+Bon, alors, nous, nous sommes là, l'aéroport, c'est ici.
+
+4
+00:00:45,630 --> 00:00:51,630
+Ce n'est pas difficile. Vous prenez la ligne 12 jusqu'à Madeleine.
+
+5
+00:00:51,630 --> 00:00:57,630
+Là, vous changez. Vous prenez la ligne 14 jusqu'à Chatelet.
+
+6
+00:00:57,630 --> 00:01:04,629
+Là, vous prenez la ligne B du RER, direction Saint-Rémy.
+
+7
+00:01:04,629 --> 00:01:12,629
+Vous allez jusqu'à Anthony. Et là, vous avez l'Ornival jusqu'à l'aéroport.
+
+8
+00:01:12,629 --> 00:01:16,629
+Ok ? Oui, oui, oui, c'est ça, oui. Merci beaucoup, monsieur.
+
+9
+00:01:16,629 --> 00:01:26,420
+Oh là là ! Taxi !
+
+10
+00:01:26,420 --> 00:01:28,420
+Bonjour, monsieur.
+
+11
+00:01:28,420 --> 00:01:30,420
+L'aéroport ? À La Réunion.
+
+12
+00:01:30,420 --> 00:01:32,420
+La Réunion ? La Réunion ?
+
+13
+00:01:32,420 --> 00:01:34,989
+Oui.
+
+14
+00:01:34,989 --> 00:01:35,989
+Quelle Réunion ?
+
+15
+00:01:35,989 --> 00:01:39,989
+À l'aéroport d'Orly. Je vais à l'île de La Réunion.
+
+16
+00:01:39,989 --> 00:01:58,870
+Oh, La Réunion ! Vous savez, je connais bien.
+
+17
+00:01:58,870 --> 00:02:03,049
+Mais vous allez où à La Réunion ?
+
+18
+00:02:03,049 --> 00:02:04,049
+À Saint-Paul.
+
+19
+00:02:04,049 --> 00:02:08,050
+Saint-Paul ? Là où il y a les très grandes plages ?
+
+20
+00:02:08,050 --> 00:02:16,460
+Bienvenue à La Réunion, l'île des couleurs,
+
+21
+00:02:16,460 --> 00:02:19,460
+terre française au milieu de l'océan Indien.
+
+22
+00:02:19,460 --> 00:02:22,460
+À l'ouest, découvrez la ville de Saint-Paul
+
+23
+00:02:22,460 --> 00:02:25,460
+et ses plages de sable blanc ou noir.
+
+24
+00:02:25,460 --> 00:02:35,979
+Un petit tour au centre de l'île ?
+
+25
+00:02:35,979 --> 00:02:37,979
+En route pour les montagnes.
+
+26
+00:02:37,979 --> 00:02:39,979
+Ici, tout est vert.
+
+27
+00:02:39,979 --> 00:02:51,229
+Au sud, pénétrez dans la forêt tropicale
+
+28
+00:02:51,229 --> 00:02:57,229
+avec ses fleurs exotiques rose, rouge, jaune, orange
+
+29
+00:02:57,229 --> 00:03:12,810
+et ses animaux de toutes les couleurs.
+
+30
+00:03:12,810 --> 00:03:28,629
+Retour sur la côte.
+
+31
+00:03:28,629 --> 00:03:30,629
+Ici, tout est bleu.
+
+32
+00:03:30,629 --> 00:03:32,629
+La mer, le ciel.
+
+33
+00:03:32,629 --> 00:03:49,099
+La Réunion vous attend. À bientôt !
+
