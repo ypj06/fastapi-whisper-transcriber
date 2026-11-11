@@ -1,0 +1,22 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# ---- 模型与缓存（体积大，不入库）----
+models/
+*.bin
+*.safetensors
+
+# ---- 本地配置与密钥 ----
+.env
+.dev.vars
+
+# ---- 运行产物 ----
+outputs/
+*.log
+temp_*

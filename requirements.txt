@@ -1,0 +1,19 @@
+# ---- Web 服务 ----
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+pydantic>=2.7
+python-dotenv>=1.0
+requests>=2.31
+
+# ---- 语音识别 ----
+faster-whisper>=1.0.3
+
+# ---- 音频处理（预处理流水线）----
+numpy>=1.26
+scipy>=1.11
+soundfile>=0.12
+pydub>=0.25
+
+# ---- 前端 ----
+streamlit>=1.35
